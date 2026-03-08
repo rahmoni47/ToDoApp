@@ -21,6 +21,8 @@ public class TaskResponse {
 
     private String task;
 
+    private String description ; 
+
     private LocalDateTime date;
 
     private Boolean done;

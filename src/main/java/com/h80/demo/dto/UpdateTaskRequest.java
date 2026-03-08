@@ -7,7 +7,6 @@ import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 
-
 /**
  * DTO pour la mise à jour d'un Task
  */
@@ -17,7 +16,9 @@ import lombok.Builder;
 @Builder
 public class UpdateTaskRequest {
 
-    @NotBlank(message = "Task should not Be empty")
-    @Size(max=1000,message = "Task length shouldn't pass 1000 character")
+    @Size(max = 100, message = "Task ne peut pas dépasser 100 caractères")
     private String task;
+
+    @Size(max = 1000, message = "Task desctiption ne peut pas dépasser 1000 caractères")
+    private String description;
 }

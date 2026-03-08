@@ -33,15 +33,6 @@ This project uses **H2 Database (In-Memory)**.
 
 H2 is a lightweight embedded database mainly used for development and testing.
 
-### H2 Console (if enabled)
-
-http://localhost:8081/h2-console
-
-Typical configuration:
-
-- JDBC URL: jdbc:h2:mem:testdb
-- Username: sa
-- Password: (empty)
 
 Note:
 The database resets every time the application restarts (because it runs in-memory mode).
@@ -90,6 +81,11 @@ http://localhost:8081
 - 404 → Resource Not Found
 
 ---
+## API doc
+
+the documentation is at the url : http://localhost:8081/swagger-ui/index.html
+Json Documentation is at  : http://localhost:8081/v3/api-docs
+
 
 ## Notes
 

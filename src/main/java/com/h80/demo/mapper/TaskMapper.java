@@ -26,6 +26,7 @@ public class TaskMapper {
         response.setTask(entity.getTask());
         response.setDate(entity.getDate());
         response.setDone(entity.isDone());
+        response.setDescription(entity.getDescription());
         
         return response;
     }
@@ -40,6 +41,7 @@ public class TaskMapper {
 
         Task entity = new Task();
         entity.setTask(request.getTask());
+        entity.setDescription(request.getDescription());
         
         return entity;
     }
@@ -54,6 +56,9 @@ public class TaskMapper {
 
         if (request.getTask() != null) {
             entity.setTask(request.getTask());
+        }
+        if (request.getDescription() != null) {
+            entity.setDescription(request.getDescription());
         }
     }
 
