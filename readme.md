@@ -83,9 +83,10 @@ http://localhost:8081
 ---
 ## API doc
 
--the documentation is at the url : http://localhost:8081/swagger-ui/index.html
--Json Documentation is at  : http://localhost:8081/v3/api-docs
+- the documentation is at the url : http://localhost:8081/swagger-ui/index.html
+- Json Documentation is at  : http://localhost:8081/v3/api-docs
 
+---
 
 ## Notes
 
